@@ -102,9 +102,11 @@ export default function App() {
     return (
      <>
       {load && 
-   <div  className='status-con'>
+   <div  className='status-con'
+   style={{background:gameWon ?'no-repeat linear-gradient(120deg,#cfc20b,#f2f2f2,#cfc20b)':'skyblue'}}>
    <div
-   className='tag'>
+   className='tag'
+   >
    {gameWon ? <h1>You Win </h1> : <h2>Let roll the dice </h2>} 
    </div>
    <button 
