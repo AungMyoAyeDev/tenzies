@@ -10,7 +10,7 @@ export default function Die({value,id,isHeld,toggle}) {
          background: isHeld ? 'skyblue' : '#fff'
       }}
     >
-    {value}
+    <img src="./public/images/dieFace{value}.png" alt="dice"/>
     </div>
   )
 }
